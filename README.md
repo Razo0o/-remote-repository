@@ -1,28 +1,12 @@
-# -remote-repository
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Original_Code;
-
-/**
- *
- * @author USER
- */
 public class SensorDataProcessor {
-    
-    // Senson data and limits.
+// Senson data and limits.
 public double[][][] data;
 public double[][] limit;
 // constructor
 public DataProcessor(double[][][] data, double[][] limit) {
 this.data = data;
 this.limit = limit;
-    
-    
 }
-
-
 // calculates average of sensor data
 private double average(double[] array) {
 int i = 0;
@@ -38,9 +22,6 @@ int i, j, k = 0;
 double[][][] data2 = new
 double[data.length][data[0].length][data[0][0].length];
 BufferedWriter out;
-
-
-
 // Write racing stats data into a file
 try {
 out = new BufferedWriter(new FileWriter("RacingStatsData.txt"));
@@ -75,9 +56,4 @@ out.close();
 System.out.println("Error= " + e);
 }
 }
-
-hiiiiiiiiiii
-newww
-bbbbb
-
 }
